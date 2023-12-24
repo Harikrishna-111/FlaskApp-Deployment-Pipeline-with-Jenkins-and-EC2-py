@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/pavankumarindian/FlaskApp-Deployment-Pipeline-with-Jenkins-and-EC2.git'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/Harikrishna-111/FlaskApp-Deployment-Pipeline-with-Jenkins-and-EC2-py.git'
             }
         }
         stage('Docker Build') {
             steps {
-                sh "docker build . --file Dockerfile --tag docker.io/pavankumarindian/python-webapp:latest"
+                sh "docker build . --file Dockerfile --tag docker.io/harikrishna111/python-webapp:latest"
             }
             
         }
@@ -29,7 +29,7 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'DockerCred', toolName: 'docker') {
                     sh "docker images"  
-                    sh "docker run -d -it -p 5000:5000 --name FlaskApp pavankumarindian/python-webapp:latest"
+                    sh "docker run -d -it -p 5000:5000 --name FlaskApp harikrishna111/python-webapp:latest"
                     }
                 }
             }
