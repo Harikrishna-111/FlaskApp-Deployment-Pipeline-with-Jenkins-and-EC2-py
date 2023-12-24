@@ -31,7 +31,8 @@ Live instances:
 Clone the project to any directory where you do development work
 
 ```
-git clone https://github.com/pavankumarindian/FlaskApp-Deployment-Pipeline-with-Jenkins-and-EC2.git
+git clone https://github.com/Harikrishna-111/FlaskApp-Deployment-Pipeline-with-Jenkins-and-EC2-py.git
+
 ```
 
 ### Makefile
@@ -58,7 +59,7 @@ Make file variables and default values, pass these in when calling `make`, e.g. 
 | Makefile Variable | Default                         |
 | ----------------- | --------------------------------|
 | IMAGE_REG         | docker<span>.</span>io          |
-| IMAGE_REPO        | pavankumarindian/python-demoapp |
+| IMAGE_REPO        | harikrishna111/python-demoapp |
 | IMAGE_TAG         | latest                          |
 | AZURE_RES_GROUP   | temp-demoapps                   |
 | AZURE_REGION      | uksouth                         |
