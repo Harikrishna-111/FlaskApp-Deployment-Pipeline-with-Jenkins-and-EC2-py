@@ -1,7 +1,7 @@
 FROM python:3.9-slim-buster
 
 LABEL Name="Python Flask Demo App" Version=1.4.2
-LABEL org.opencontainers.image.source = "https://github.com/pavankumarindian/FlaskApp-Deployment-Pipeline-with-Jenkins-and-EC2.git"
+LABEL org.opencontainers.image.source = "https://github.com/Harikrishna-111/FlaskApp-Deployment-Pipeline-with-Jenkins-and-EC2-py.git"
 
 ARG srcDir=src
 WORKDIR /app
